@@ -3,7 +3,8 @@
 
   "DESIGN_NAME": "pm32",
   "VERILOG_FILES": ["dir::pm32.v", "dir::spm.v"],
-
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  
   "//": "This is the default configuration for Tiny Tapeout projects. It should fit most designs.",
   "//": "If you change it, please make sure you understand what you are doing. We are not responsible",
   "//": "if your project fails because of a bad configuration.",
