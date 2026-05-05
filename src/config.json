@@ -21,30 +21,38 @@
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
 
+  "//": "Save some time",
   "RUN_KLAYOUT_XOR": 0,
   "RUN_KLAYOUT_DRC": 0,
 
+  "//": "Don't put clock buffers on the outputs",
   "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": 0,
 
-  "//": "Stable TT IO geometry (IMPORTANT FIX)",
-  "TOP_MARGIN_MULT": 2,
-  "BOTTOM_MARGIN_MULT": 2,
-  "LEFT_MARGIN_MULT": 4,
-  "RIGHT_MARGIN_MULT": 4,
+  "//": "Reduce wasted space",
+  "TOP_MARGIN_MULT": 1,
+  "BOTTOM_MARGIN_MULT": 1,
+  "LEFT_MARGIN_MULT": 6,
+  "RIGHT_MARGIN_MULT": 6,
 
-  "FP_SIZING": "relative",
+  "//": "Absolute die size",
+  "FP_SIZING": "absolute",
 
-  "//": "IMPORTANT: disable congestion override for CI stability",
-  "GRT_ALLOW_CONGESTION": 0,
+  "GRT_ALLOW_CONGESTION": 1,
 
   "FP_IO_HLENGTH": 2,
   "FP_IO_VLENGTH": 2,
 
   "FP_PDN_VPITCH": 38.87,
 
+  "//": "Clock",
   "RUN_CTS": 1,
+
+  "//": "Don't generate power rings",
   "FP_PDN_MULTILAYER": 0,
 
+  "//": "MAGIC_DEF_LABELS may cause issues with LVS",
   "MAGIC_DEF_LABELS": 0,
+
+  "//": "Only export pin area in LEF (without any connected nets)",
   "MAGIC_WRITE_LEF_PINONLY": 1
 }
