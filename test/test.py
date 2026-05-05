@@ -28,7 +28,7 @@ async def test_pm32(dut):
     # ----------------------------
     # Test values
     # ----------------------------
-    mc = -1
+    mc = 113
     mp = 217
 
     dut.ui_in.value = mc
